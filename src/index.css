@@ -5,13 +5,13 @@
 }
 
 body {
-  padding: 3rem;
+  padding: 1rem;
 }
 
 input{
   color: gray;
   font-size: 1.2rem;
-  width: 100%;
+  width: 90%;
 }
 
 .card{
@@ -37,5 +37,20 @@ input{
 .card-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
-  gap: 1rem;
+  justify-content: center;
+  gap: .2rem;
+}
+
+ol{
+  padding: 0;
+}
+
+h3{
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .card-grid{
+    gap: 1rem;
+  }
 }
